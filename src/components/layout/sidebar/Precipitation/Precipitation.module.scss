@@ -1,0 +1,92 @@
+.Precipitation {
+	> div:first-child {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10px;
+
+		margin-bottom: 45px;
+	}
+}
+
+.Precip_informer {
+	display: flex;
+	> span {
+		display: block;
+		width: 25px;
+		height: 25px;
+		border: 1px solid transparent;
+		border-radius: 50%;
+		&:first-child {
+			border-color: #e87472;
+			background-color: #df5151;
+		}
+		&:nth-child(2) {
+			border-color: #d6ac77;
+			background-color: #d28846;
+			transform: translateX(-35%);
+		}
+		&:nth-child(3) {
+			border-color: #ebd693;
+			background-color: #d6b651;
+			transform: translateX(-70%);
+		}
+		&:nth-child(4) {
+			border-color: #c1b882;
+			background-color: #e6c96c;
+			transform: translateX(-105%);
+		}
+		&:last-child {
+			border-color: #fde493;
+			background-color: #f7db83;
+			transform: translateX(-140%);
+		}
+	}
+}
+.precip {
+	display: flex;
+	gap: 10px;
+	align-items: flex-end;
+	justify-content: space-between;
+	font-size: 28px;
+	line-height: 0.8;
+}
+.Precip_descr {
+	display: flex;
+	justify-content: space-between;
+	> div {
+		> h6 {
+			font-size: 14px;
+			font-weight: 400;
+
+			margin-bottom: 15px;
+		}
+	}
+}
+.precip_item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 16px;
+}
+.precip_item + .precip_item {
+	margin-top: 5px;
+}
+.dot {
+	display: block;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+}
+.yellow {
+	background-color: #d1bf7d;
+}
+.oyellow {
+	background-color: #d3b254;
+}
+.orange {
+	background-color: #e49550;
+}
+.red {
+	background-color: #e75e5a;
+}

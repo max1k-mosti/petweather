@@ -1,0 +1,16 @@
+.Sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	padding: 40px 30px;
+	min-height: 100vh;
+	max-width: 380px;
+	border-right: 1px solid #fff;
+	border-radius: 20px;
+	backdrop-filter: blur(10px);
+}
+
+.SearchActive {
+	backdrop-filter: none;
+}

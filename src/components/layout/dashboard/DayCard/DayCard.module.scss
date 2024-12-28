@@ -1,0 +1,59 @@
+.DayCard {
+	position: relative;
+	z-index: 1;
+	> div:first-child {
+		margin-bottom: 180px;
+	}
+	> div:last-child {
+		> h3 {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.temp {
+	display: inline-block;
+	font-size: 92px;
+	font-weight: 700;
+	position: relative;
+	&::after {
+		content: '';
+		display: block;
+		width: 14px;
+		height: 14px;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		position: absolute;
+		top: 20px;
+		right: -20px;
+	}
+}
+
+.precip {
+	span {
+		display: block;
+		width: 100%;
+		height: 4px;
+		border-radius: 20px;
+		&:last-child {
+			width: 80%;
+			opacity: 0.6;
+		}
+	}
+	span + span {
+		margin-top: 5px;
+	}
+}
+
+.yellow {
+	background-color: #d1bf7d;
+}
+.oyellow {
+	background-color: #d3b254;
+}
+.orange {
+	background-color: #e49550;
+}
+.red {
+	background-color: #e75e5a;
+}

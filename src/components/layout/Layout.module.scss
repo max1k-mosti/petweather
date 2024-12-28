@@ -1,0 +1,13 @@
+main {
+	width: 100%;
+}
+.Layout {
+	display: flex;
+	min-width: 100vw;
+}
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(34, 35, 35, 0.6);
+	position: fixed;
+}

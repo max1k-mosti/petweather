@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+html,
+body {
+	margin: 0;
+	background-color: #222323;
+	// background-image: url(./assets/background-main.jpg);
+	// background-repeat: no-repeat;
+	// background-position: center;
+	// background-size: cover;
+	min-height: 100vh;
+
+	font-family: 'Noto Sans', sans-serif;
+	color: #fff;
+	font-size: 18px;
+	overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	margin: 0;
+}
+p {
+	margin: 0;
+}
+
+video {
+	width: 100vw;
+	min-height: 100vh;
+	object-fit: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}

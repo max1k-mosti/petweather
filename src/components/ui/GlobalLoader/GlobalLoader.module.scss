@@ -1,0 +1,38 @@
+.GlobalLoader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(34, 35, 35, 0.7);
+	backdrop-filter: blur(10px);
+
+	z-index: 9999;
+}
+
+.Cloudy {
+	animation: reel infinite 1.3s linear;
+}
+
+@keyframes reel {
+	0% {
+		transform: rotate(0);
+	}
+	25% {
+		transform: rotate(-25deg);
+	}
+	50% {
+		transform: rotate(0);
+	}
+	75% {
+		transform: rotate(25deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
