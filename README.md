@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# Petweather - Тестовое приложение о погоде 🌤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Petweather** — это тестовый проект для демонстрации работы с погодными API и реализации клиентской части приложения на **React**. В этом проекте реализована базовая функциональность для отображения погоды, прогнозов и текущих условий. Этот проект является примером работы с React, API-запросами и другими современными инструментами фронтенд-разработки.
 
-Currently, two official plugins are available:
+## Демо
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Просмотрите демонстрационную версию приложения, чтобы увидеть, как оно работает.
 
-## Expanding the ESLint configuration
+[Посмотреть демо](https://petweather.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Функции
 
-- Configure the top-level `parserOptions` property like this:
+- Получение актуальной погоды для указанного города, так же по геолокации 🌍
+- Прогноз на несколько дней вперед 🌦️
+- Простая интерфейсная структура с возможностью поиска по городам 🏙️
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+## Технологии
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+В проекте использованы следующие технологии:
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
-```
+- **React** — для разработки интерфейса с динамичными компонентами ⚛️
+- **OpenWeather API** — для получения данных о погоде ☁️
+- **FreeIpApi** - для получения геолокации по IP, если человек запретил доступ к своему гео 🌍
+- **SCSS** — для стилизации приложения 🎨
